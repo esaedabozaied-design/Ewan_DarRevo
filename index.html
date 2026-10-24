@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>إيوان × دار ريفو — نموذج تجربة المطبخ</title>
+<meta name="description" content="نموذج توضيحي لتجربة اختيار المطبخ أثناء زيارة المشروع، مقدم من إيوان للمطابخ والخزائن إلى دار ريفو العقارية.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#17110e">
+<link rel="icon" href="assets/brand/ewan-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <div class="lockup" aria-label="إيوان × دار ريفو">
+      <img class="lk-dar" src="assets/brand/dar-revo-logo-gold.png" alt="دار ريفو العقارية">
+      <span class="lk-x" aria-hidden="true">×</span>
+      <img class="lk-ewan" src="assets/brand/ewan-logo-horizontal-reverse.svg" alt="إيوان للمطابخ والخزائن">
+    </div>
+    <nav class="tabs" role="tablist" aria-label="أقسام النموذج">
+      <button role="tab" id="tab-visitor" aria-controls="p-visitor" aria-selected="true" data-tab="visitor"><b>1</b><span>تجربة الزائر</span></button>
+      <button role="tab" id="tab-sales" aria-controls="p-sales" aria-selected="false" data-tab="sales" tabindex="-1"><b>2</b><span>لوحة المبيعات</span></button>
+      <button role="tab" id="tab-qr" aria-controls="p-qr" aria-selected="false" data-tab="qr" tabindex="-1"><b>3</b><span>ستاند الـQR</span></button>
+      <button role="tab" id="tab-model" aria-controls="p-model" aria-selected="false" data-tab="model" tabindex="-1"><b>4</b><span>نموذج التعاون</span></button>
+    </nav>
+    <div class="top-tools">
+      <span class="demo-pill" title="التصاميم والأسعار والأرقام في هذا النموذج توضيحية">نموذج توضيحي</span>
+      <button class="ghost" id="btn-project" type="button" aria-haspopup="dialog">اسم المشروع</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="panel" id="p-visitor" role="tabpanel" aria-labelledby="tab-visitor"></section>
+  <section class="panel" id="p-sales" role="tabpanel" aria-labelledby="tab-sales" hidden></section>
+  <section class="panel" id="p-qr" role="tabpanel" aria-labelledby="tab-qr" hidden></section>
+  <section class="panel" id="p-model" role="tabpanel" aria-labelledby="tab-model" hidden></section>
+</main>
+
+<footer class="foot">
+  <span>تصور مقدم من إيوان للمطابخ والخزائن. لا يمثل اتفاق شراكة قائمًا.</span>
+  <span>التصاميم والأسعار والأرقام توضيحية، وتُعتمد بعد مراجعة المخططات والعينات.</span>
+</footer>
+
+<dialog id="dlg-project" aria-labelledby="dlg-title">
+  <form method="dialog" id="form-project">
+    <h2 id="dlg-title">خصّص العرض لمشروعكم</h2>
+    <p class="muted">يظهر الاسم في تجربة الزائر والستاند ولوحة المبيعات. يُحفظ على هذا الجهاز فقط.</p>
+    <label class="field"><span>اسم المشروع</span>
+      <input id="in-project" type="text" maxlength="40" autocomplete="off" placeholder="مثال: اسم مشروع دار ريفو">
+    </label>
+    <label class="field"><span>رقم واتساب فريق المبيعات (بصيغة دولية)</span>
+      <input id="in-wa" type="text" inputmode="numeric" dir="ltr" maxlength="15" placeholder="966504618348">
+    </label>
+    <div class="dlg-actions">
+      <button class="btn primary" value="ok" id="dlg-save">حفظ</button>
+      <button class="btn" value="cancel">إلغاء</button>
+    </div>
+  </form>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/vendor/qrcode.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
